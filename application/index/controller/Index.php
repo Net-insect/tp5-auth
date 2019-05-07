@@ -6,10 +6,7 @@ use think\Loader;
 
 class Index extends Controller
 {
-    public function index()//当前方法未添加到权限表也未分发权限所以权限验证类默认它为没有权限
-    {
-        return '这是一个用tp5框架写的auth权限功能模块的demo 可以给一些基础小白借鉴';
-    }
+
 
     protected $current_action;//用来保存当前的操作url
     public function _initialize(){
@@ -24,6 +21,8 @@ class Index extends Controller
         }
 
     }
+
+
 
     public function add1(){
         echo "这是add1方法的操作";
